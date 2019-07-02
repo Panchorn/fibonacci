@@ -1,14 +1,14 @@
 public class Fibonacci {
     public static void main(String[] args) {
-        Long start = System.currentTimeMillis();
+        Long start = System.nanoTime();
         Long result = fibonacciWithRecursion(50L);
         System.out.println("result of fibonacciWithRecursion is " + result);
-        System.out.println("using " + (System.currentTimeMillis() - start) + " ms");
+        System.out.println("using " + (System.nanoTime() - start) + " nano");
         
-        start = System.currentTimeMillis();
+        start = System.nanoTime();
         result = fibonacciWithoutRecursion(50L);
         System.out.println("result of fibonacciWithoutRecursion is " + result);
-        System.out.println("using " + (System.currentTimeMillis() - start) + " ms");
+        System.out.println("using " + (System.nanoTime() - start) + " nano");
     }
 
     public static Long fibonacciWithRecursion(Long input) {
